@@ -1,13 +1,13 @@
 ### PostgREST
 
-PostgREST — это автономный веб-сервер, который превращает базу данных PostgreSQL в RESTful API.
-PostgREST позволяет нам создать полнофункциональный REST API для операций CRUD.
+PostgREST вЂ” СЌС‚Рѕ Р°РІС‚РѕРЅРѕРјРЅС‹Р№ РІРµР±-СЃРµСЂРІРµСЂ, РєРѕС‚РѕСЂС‹Р№ РїСЂРµРІСЂР°С‰Р°РµС‚ Р±Р°Р·Сѓ РґР°РЅРЅС‹С… PostgreSQL РІ RESTful API.
+PostgREST РїРѕР·РІРѕР»СЏРµС‚ РЅР°Рј СЃРѕР·РґР°С‚СЊ РїРѕР»РЅРѕС„СѓРЅРєС†РёРѕРЅР°Р»СЊРЅС‹Р№ REST API РґР»СЏ РѕРїРµСЂР°С†РёР№ CRUD.
 
 ### Docker
 * docker-compose up -d
 * docker-compose down
-* Чтобы выполнить команды sql в контейнере: docker-compose exec -it db psql -U app_user -d app_db
+* Р§С‚РѕР±С‹ РІС‹РїРѕР»РЅРёС‚СЊ РєРѕРјР°РЅРґС‹ sql РІ РєРѕРЅС‚РµР№РЅРµСЂРµ: docker-compose exec -it db psql -U app_user -d app_db
 
-### Ссылки:
+### РЎСЃС‹Р»РєРё:
 * doc https://postgrest.org/en/stable/
 * api https://postgrest.org/en/stable/references/api.html
