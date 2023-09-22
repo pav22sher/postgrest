@@ -1,0 +1,39 @@
+GET http://localhost:3000/todos
+
+###
+GET http://localhost:3000/todos?id=eq.1
+
+###
+GET http://localhost:3000/todos?select=id,task
+
+###
+POST http://localhost:3000/todos
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwicm9sZSI6InRvZG9fdXNlciJ9.BA6qazxRx-2LTv5v-PQ76Zl7UgANuBgyoFzxz7sDnmQ
+
+{
+  "task": "learn how to auth"
+}
+
+###
+PATCH http://localhost:3000/todos?id=eq.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwicm9sZSI6InRvZG9fdXNlciJ9.BA6qazxRx-2LTv5v-PQ76Zl7UgANuBgyoFzxz7sDnmQ
+
+{
+  "done": false
+}
+
+###
+PATCH http://localhost:3000/todos?id=eq.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwicm9sZSI6InRvZG9fdXNlciJ9.BA6qazxRx-2LTv5v-PQ76Zl7UgANuBgyoFzxz7sDnmQ
+
+{
+  "done": false
+}
+
+###
+DELETE http://localhost:3000/todos?id=eq.4
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwicm9sZSI6InRvZG9fdXNlciJ9.BA6qazxRx-2LTv5v-PQ76Zl7UgANuBgyoFzxz7sDnmQ
